@@ -1,0 +1,13 @@
+@import '../../../Styles/index.scss';
+
+.use-state-root-container {
+  display:block;
+  text-align:center;
+  width:100%;
+
+  .number {
+    display:block;
+    font-size:25px;
+    margin:20px;
+  }
+}

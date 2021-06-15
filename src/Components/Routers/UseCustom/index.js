@@ -1,9 +1,9 @@
-import UseCustomState from '../../Pages/UseCustom'
+import UseCustom from '../../Pages/UseCustom'
 
 const routes = [
     {
-        path: "/use-custom-state",
-        component: UseCustomState
+        path: "/use-custom",
+        component: UseCustom
     }
 ]
 
