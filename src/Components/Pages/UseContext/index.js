@@ -1,10 +1,7 @@
 import React, {useEffect} from 'react'
+import withTitle from "../../Common/HOC/withTitle"
 
 function UseContext(props) {
-    useEffect(() => {
-        document.title = "UseContext | Application"
-    }, [])
-
     return (
         <div>
             UseContext
@@ -12,4 +9,4 @@ function UseContext(props) {
     )
 }
 
-export default UseContext
+export default withTitle(UseContext)("UseContext | Application")

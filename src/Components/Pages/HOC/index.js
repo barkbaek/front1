@@ -1,10 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
+import withTitle from "../../Common/HOC/withTitle"
 
 function HOC(props) {
-    useEffect(() => {
-        document.title = "HOC | Application"
-    }, [])
-
     return (
         <div>
             HOC
@@ -12,4 +9,4 @@ function HOC(props) {
     )
 }
 
-export default HOC
+export default withTitle(HOC)("HOC | Application")

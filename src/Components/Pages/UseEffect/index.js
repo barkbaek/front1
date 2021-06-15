@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import SubComponent from "./SubComponent"
+import withTitle from "../../Common/HOC/withTitle"
 import './index.scss'
 
 function UseEffect(props) {
     const [render, setRender] = useState(true);
-
-    useEffect(() => {
-        document.title = "UseEffect | Application"
-    }, [])
 
     return (
         <div className="use-effect-root-container">
@@ -19,4 +16,4 @@ function UseEffect(props) {
     )
 }
 
-export default UseEffect
+export default withTitle(UseEffect)("UseEffect | Application")

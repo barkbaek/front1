@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
+import withTitle from "../../Common/HOC/withTitle"
 
 function UseRef(props) {
     const nameInput = useRef()
@@ -7,7 +8,6 @@ function UseRef(props) {
     const [number, setNumber] = useState(0);
 
     useEffect(() => {
-        document.title = "UseRef | Application"
         nameInput.current.focus();
     }, [])
 
@@ -35,4 +35,4 @@ function UseRef(props) {
     )
 }
 
-export default UseRef
+export default withTitle(UseRef)("UseRef | Application")

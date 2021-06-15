@@ -1,10 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
+import withTitle from "../../Common/HOC/withTitle"
 
 function Class(props) {
-    useEffect(() => {
-        document.title = "Class | Application"
-    }, [])
-
     return (
         <div>
             Class - React.createRef 사용해보기
@@ -12,4 +9,4 @@ function Class(props) {
     )
 }
 
-export default Class
+export default withTitle(Class)("Class | Application")

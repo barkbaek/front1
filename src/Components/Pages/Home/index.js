@@ -1,12 +1,6 @@
-import { useHistory, useLocation } from 'react-router-dom'
-import {useEffect} from "react";
+import withTitle from "../../Common/HOC/withTitle"
 
 function Home(props) {
-
-    useEffect(() => {
-        document.title = "Home | Application"
-    }, [])
-
     return (
         <div className="home-root-container">
             Hello, World
@@ -14,4 +8,4 @@ function Home(props) {
     )
 }
 
-export default Home
+export default withTitle(Home)("Home | Application")

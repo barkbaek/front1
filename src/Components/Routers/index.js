@@ -5,7 +5,7 @@ import {
     useLocation
 } from 'react-router-dom'
 
-import Menu from '../Common/Menu'
+import Menu from '../Common/Components/Menu'
 import Home from './Home'
 import UseState from './UseState'
 import UseEffect from './UseEffect'

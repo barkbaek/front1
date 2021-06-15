@@ -1,12 +1,9 @@
 import React, {useEffect} from 'react'
-import useInput from "../../Hooks/useInput"
+import useInput from "../../Common/CustomHooks/useInput"
+import withTitle from "../../Common/HOC/withTitle"
 
 function UseCustom(props) {
     const [text, onChangeText, setText] = useInput('');
-
-    useEffect(() => {
-        document.title = "UseCustom | Application"
-    }, [])
 
     return (
         <div className="use-custom-root-container">
@@ -24,4 +21,4 @@ function UseCustom(props) {
     )
 }
 
-export default UseCustom
+export default withTitle(UseCustom)("UseCustom | Application")

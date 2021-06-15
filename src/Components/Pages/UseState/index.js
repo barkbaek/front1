@@ -1,11 +1,8 @@
 import React, {useEffect, useState} from 'react'
+import withTitle from "../../Common/HOC/withTitle"
 import './index.scss'
 
 function UseState(props) {
-    useEffect(() => {
-        document.title = "UseState | Application"
-    }, [])
-
     const [number, setNumber] = useState(0)
 
     const onIncrease = () => {
@@ -25,4 +22,4 @@ function UseState(props) {
     )
 }
 
-export default UseState
+export default withTitle(UseState)("UseState | Application")

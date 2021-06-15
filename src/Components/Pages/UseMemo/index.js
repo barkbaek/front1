@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
+import withTitle from "../../Common/HOC/withTitle"
 import SubComponent from "./SubComponent"
 
 function UseMemo(props) {
     const [color, setColor] = useState("")
     const [movieType, setMovieType] = useState("")
-
-    useEffect(() => {
-        document.title = "UseMemo | Application"
-    }, [])
 
     const onChange = e => {
         if (e.target.name === "color") setColor(e.target.value)
@@ -91,4 +88,4 @@ function UseMemo(props) {
     )
 }
 
-export default UseMemo
+export default withTitle(UseMemo)("UseMemo | Application")
