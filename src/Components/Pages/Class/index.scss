@@ -1,0 +1,26 @@
+@import '../../../Styles/index.scss';
+
+.class-root-container {
+  display:block;
+  width:100%;
+  text-align:center;
+
+  .line-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+
+    .left,
+    .right {
+      border: 1px solid darkcyan;
+      width: 200px;
+      height: 200px;
+
+      h4 {
+        text-align:center;
+      }
+    }
+  }
+}
+

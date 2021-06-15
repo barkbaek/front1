@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react'
 import withTitle from "../../Common/HOC/withTitle"
 
-function HOC2(props) {
+function HOCwithContext(props) {
     return (
         <div>
-            HOC2
+            HOCwithContext
         </div>
     )
 }
 
-export default withTitle(HOC2)("HOC2 | Application")
+export default withTitle(HOCwithContext)("HOCwithContext | Application")
