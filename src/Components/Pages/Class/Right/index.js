@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import withRequest from '../../../Common/HOC/withRequest'
 import withText from '../../../Common/HOC/withText'
+import RightBottom from "../Containers/RightBottom"
 
 const URL = "https://jsonplaceholder.typicode.com/posts/2"
 
@@ -14,9 +15,10 @@ class Right extends Component {
                 <div><strong>value</strong> {value}</div>
                 <hr />
                 <div><strong>text</strong> {text}</div>
+                <RightBottom />
             </div>
         )
     }
 }
 
-export default withText(withRequest(Right)(URL));
+export default withText(withRequest(Right)(URL))
