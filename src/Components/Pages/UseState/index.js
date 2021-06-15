@@ -1,7 +1,11 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './index.scss'
 
 function UseState(props) {
+    useEffect(() => {
+        document.title = "UseState | Application"
+    }, [])
+
     const [number, setNumber] = useState(0)
 
     const onIncrease = () => {

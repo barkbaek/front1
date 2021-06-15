@@ -1,9 +1,13 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import SubComponent from "./SubComponent"
 import './index.scss'
 
 function UseEffect(props) {
     const [render, setRender] = useState(true);
+
+    useEffect(() => {
+        document.title = "UseEffect | Application"
+    }, [])
 
     return (
         <div className="use-effect-root-container">

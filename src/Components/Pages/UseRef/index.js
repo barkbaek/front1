@@ -7,8 +7,9 @@ function UseRef(props) {
     const [number, setNumber] = useState(0);
 
     useEffect(() => {
+        document.title = "UseRef | Application"
         nameInput.current.focus();
-    }, []);
+    }, [])
 
     const increaseLocalVar = () => {
         localVar.current = localVar.current + 1

@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 function UseContext(props) {
+    useEffect(() => {
+        document.title = "UseContext | Application"
+    }, [])
+
     return (
         <div>
             UseContext
