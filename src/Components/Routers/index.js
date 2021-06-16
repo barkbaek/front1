@@ -14,7 +14,6 @@ import UseRef from './UseRef'
 import UseCustom from "./UseCustom"
 import UseContext from "./UseContext"
 import HOC from './HOC'
-import HOC2 from './HOCwithContext'
 import Class from './Class'
 
 function DetectPageViews() {
@@ -34,7 +33,6 @@ function Routers(props) {
         ...UseCustom,
         ...UseContext,
         ...HOC,
-        ...HOC2,
         ...Class
     ]
 

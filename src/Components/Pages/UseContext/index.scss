@@ -1,0 +1,33 @@
+@import '../../../Styles/index.scss';
+
+.use-context-root-container {
+  display:block;
+  width:100%;
+  text-align:center;
+
+  .line-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+
+    .left,
+    .right {
+      border: 1px solid darkcyan;
+      padding:10px;
+      width: 300px;
+      margin:10px;
+
+      h4 {
+        text-align:center;
+      }
+
+      .left-bottom,
+      .right-bottom {
+        border:1px solid lightseagreen;
+        padding:10px;
+        margin:20px;
+      }
+    }
+  }
+}

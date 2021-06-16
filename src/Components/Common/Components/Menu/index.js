@@ -39,10 +39,6 @@ function Menu (props) {
             name: 'HOC'
         },
         {
-            path: '/hoc-with-context',
-            name: 'HOCwithContext'
-        },
-        {
             path: '/class',
             name: 'Class'
         }

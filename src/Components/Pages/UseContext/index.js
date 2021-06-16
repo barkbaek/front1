@@ -1,26 +1,21 @@
 import React, {useContext, useEffect} from 'react'
 import withTitle from "../../Common/HOC/withTitle"
-import { Context } from '../../@Context'
+import {withContext} from "./@Context"
+import Left from "./Left"
+import Right from "./Right"
+import './index.scss'
 
 function UseContext(props) {
-    const { state: {
-        value1
-    },
-        actions: {
-            setValue1
-        }} = useContext(Context)
-
-    const onClick = () => {
-        setValue1(value1 + 1);
-    };
 
     return (
-        <div>
-            UseContext
-            <div>{value1}</div>
-            <button onClick={onClick}>증가</button>
+        <div className="use-context-root-container">
+            <h3>UseContext</h3>
+            <div className="line-container">
+                <Left />
+                <Right />
+            </div>
         </div>
     )
 }
 
-export default withTitle(UseContext)("UseContext | Application")
+export default withTitle( withContext(UseContext) )("UseContext | Application")
