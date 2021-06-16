@@ -1,4 +1,5 @@
 import Routers from './Components/Routers';
+import { withContext } from './Components/@Context'
 
 function App() {
   return (
@@ -8,4 +9,4 @@ function App() {
   );
 }
 
-export default App
+export default withContext(App)
