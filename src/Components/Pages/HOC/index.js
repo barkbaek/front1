@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import withTitle from "../../Common/HOC/withTitle"
+import SubComponent from "./SubComponent"
+import './index.scss'
 
 function HOC(props) {
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 1000)
+    }, [])
+
+
     return (
-        <div>
-            HOC
+        <div className="hoc-root-container">
+            <SubComponent loading={loading}/>
         </div>
     )
 }
