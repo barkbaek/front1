@@ -8,10 +8,11 @@ function UseEffect(props) {
 
     return (
         <div className="use-effect-root-container">
-            UseEffect
+            <h3>UseEffect</h3>
+            <p>Console을 확인하세요.</p>
             <hr/>
             {render ? <SubComponent /> : null}
-            <button onClick={() => { setRender(!render) }}>변경</button>
+            <button onClick={() => { setRender(!render) }}>{ render? '숨기기' : '보이기' }</button>
         </div>
     )
 }
