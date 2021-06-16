@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import withTitle from "../../Common/HOC/withTitle"
+import withTitle from "../../Common/HOC/WithTitle"
 import './index.scss'
 
 function UseState(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import withRequest from '../../../Common/HOC/withRequest'
-import withText from '../../../Common/HOC/withText'
+import withRequest from '../../../Common/HOC/WithRequest'
+import withText from '../../../Common/HOC/WithText'
 import LeftBottom from "../Containers/LeftBottom"
 
 const URL = "https://jsonplaceholder.typicode.com/posts/1"

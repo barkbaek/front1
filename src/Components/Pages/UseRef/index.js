@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import withTitle from "../../Common/HOC/withTitle"
+import withTitle from "../../Common/HOC/WithTitle"
 
 function UseRef(props) {
     const nameInput = useRef()

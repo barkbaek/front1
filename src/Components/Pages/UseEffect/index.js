@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import SubComponent from "./SubComponent"
-import withTitle from "../../Common/HOC/withTitle"
+import withTitle from "../../Common/HOC/WithTitle"
 import './index.scss'
 
 function UseEffect(props) {

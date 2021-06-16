@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
-import useInput from "../../Common/CustomHooks/useInput"
-import withTitle from "../../Common/HOC/withTitle"
+import useInput from "../../Common/CustomHooks/UseInput"
+import withTitle from "../../Common/HOC/WithTitle"
 
 function UseCustom(props) {
     const [text, onChangeText, setText] = useInput('');

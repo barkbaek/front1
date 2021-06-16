@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import withTitle from "../../Common/HOC/withTitle"
+import withTitle from "../../Common/HOC/WithTitle"
 import Left from './Left'
 import Right from './Right'
 import './index.scss'

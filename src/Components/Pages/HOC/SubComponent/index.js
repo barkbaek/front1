@@ -1,5 +1,5 @@
 import React from 'react'
-import withLoading from "../../../Common/HOC/withLoading"
+import withLoading from "../../../Common/HOC/WithLoading"
 
 function SubComponent(props) {
     return (

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import withTitle from "../../Common/HOC/withTitle"
+import withTitle from "../../Common/HOC/WithTitle"
 import SubComponent from "./SubComponent"
 
 function UseMemo(props) {

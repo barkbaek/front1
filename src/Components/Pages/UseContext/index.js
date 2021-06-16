@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react'
-import withTitle from "../../Common/HOC/withTitle"
+import withTitle from "../../Common/HOC/WithTitle"
 import {withContext} from "./@Context"
 import Left from "./Left"
 import Right from "./Right"
