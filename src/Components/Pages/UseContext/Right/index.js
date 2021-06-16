@@ -4,7 +4,7 @@ import RightBottom from "../RightBottom"
 function Right(props) {
     return (
         <div className="right">
-            <h4>Left</h4>
+            <h4>Right</h4>
             <RightBottom />
         </div>
     )
